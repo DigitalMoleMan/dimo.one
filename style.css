@@ -1,0 +1,75 @@
+* {
+    user-select: none;
+    outline: none;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+    width: .5rem;
+    background-color: rgb(8, 8, 16);
+}
+
+*::-webkit-scrollbar.light {
+    background-color: rgb(8, 8, 16);
+}
+
+*::-webkit-scrollbar.dark {
+    background-color: rgb(8, 8, 16);
+}
+
+*::-webkit-scrollbar-thumb {
+    width: .5rem;
+    background-color: rgb(32, 32, 32);
+}
+
+body {
+    margin: 0em;
+    background-color: rgb(16, 16, 32);
+}
+
+main {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    top: 0em;
+    max-width: 55em;
+}
+
+
+
+#mainContent {
+    z-index: 1;
+    position: relative;
+    display: block;
+    padding: .25em;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .5);
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.pageLink {
+    z-index: 2;
+    position: relative;
+    display: grid;
+    margin: .5rem;
+    padding: .75rem;
+    width: 5em;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .5);
+    background-color: #444;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    transition: .1s ease;
+}
+
+.pageLink:hover {
+    background-color: #333;
+}
