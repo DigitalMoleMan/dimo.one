@@ -1,75 +1,123 @@
-* {
-    user-select: none;
-    outline: none;
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-}
-
-*::-webkit-scrollbar {
-    width: .5rem;
-    background-color: rgb(8, 8, 16);
-}
-
-*::-webkit-scrollbar.light {
-    background-color: rgb(8, 8, 16);
-}
-
-*::-webkit-scrollbar.dark {
-    background-color: rgb(8, 8, 16);
-}
-
-*::-webkit-scrollbar-thumb {
-    width: .5rem;
-    background-color: rgb(32, 32, 32);
-}
-
 body {
-    margin: 0em;
-    background-color: rgb(16, 16, 32);
+    margin: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+header {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    background-color: #434;
+}
+
+.navbar {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 56rem;
+}
+
+.branding {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
 }
 
 main {
     position: relative;
     display: block;
     margin: 0 auto;
-    padding: 1em;
-    top: 0em;
-    max-width: 55em;
+    max-width: 60rem;
 }
 
-
-
-#mainContent {
-    z-index: 1;
+.container {
     position: relative;
     display: block;
-    padding: .25em;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .5);
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.pageLink {
-    z-index: 2;
-    position: relative;
-    display: grid;
-    margin: .5rem;
-    padding: .75rem;
-    width: 5em;
-    border-radius: 5px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .5);
-    background-color: #444;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    text-align: left;
-    color: #fff;
-    transition: .1s ease;
-}
-
-.pageLink:hover {
+    margin: 1rem;
+    padding: 1rem;
     background-color: #333;
+}
+
+.pages {
+    position: relative;
+    display: block;
+    padding: .5rem;
+    width: fit-content;
+    height: fit-content;
+
+    background-color: #444;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin: .5rem;
+    width: 16rem;
+    height: 10rem;
+    background-color: #333;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+
+.card .thumb {
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: inherit;
+    height: 8rem;
+    transition: inherit;
+}
+
+.card .text {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 8rem;
+    height: 4rem;
+    background-color: #434;
+    color: #fff;
+    overflow: hidden;
+    transition: inherit;
+}
+
+.card .title {
+    position: relative;
+    display: block;
+    margin: inherit;
+    width: inherit;
+    height: fit-content;
+    line-height: 2rem;
+    text-indent: 1rem;
+}
+
+.card .description {
+    position: relative;
+    display: block;
+    margin: inherit;
+    width: inherit;
+    height: fit-content;
+    line-height: 2rem;
+    text-indent: 1rem;
+}
+
+.card:hover .text {
+    top: 6rem;
 }

@@ -2,62 +2,28 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <title>dimo.one</title>
-    <link rel="icon" href="img/dimo_logo.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dimoUniStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
-    <nav>
-        
-        <div id="navContent">
-
-            <div id="navLeft" class="navLeft">
-                
-                <i id="navHamb" class="material-icons md-24 md-light" onclick="toggleMenu();">menu</i>
-                
-            </div>
-
-            
-            <div id="navRight">
-                <i id="navToggle" class="material-icons md-24 md-light" onclick="toggleNavbar(navStatus);">expand_less</i>
-            </div>
-
-            <div id="navCenter">
-                <a id="branding" href="http://dimo.one/">
-                    <img id="logo" src="img/dimo_logo.svg">
-                    <h1 id="name">dimo.one</h1>
-                </a>
+    <header>
+        <div class="navbar">
+            <div class="branding">
+                <h1 class="logo">dimo.one</h1>
             </div>
         </div>
-        <div id="menu" class="navMenu">
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-                <a id="optionTitle" class="option" href="#">placeholder</a>
-        
-            </div>
-    </nav>
-    
+    </header>
     <main>
-
-        <div id="mainContent">
-            <a class="pageLink" href="https://dashboard.dimo.one/">dashboard</a>
-            <a class="pageLink" href="http://chat.dimo.one/">chat</a>
+        <div class="container">
+            <div class="pages" id="pages">
+            </div>
         </div>
-
     </main>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
